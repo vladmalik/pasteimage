@@ -40,3 +40,5 @@ Notes
 Doesn't work in FF if the focus is inside another text area (hypothesis: paste event happens before the plugin can refocus on the pastecatcher DIV)
 
 Doesn't always work depending on method used to "copy" the image (e.g., Right Click > Copy)
+
+Doesn't seem to work with jQuery 1.10. Will investigate.
