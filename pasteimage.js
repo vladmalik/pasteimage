@@ -16,7 +16,7 @@
 			// If Firefox (doesn't support clipboard object), create DIV to catch pasted image
 			if ($.browser.mozilla) { // in case other browsers support this method try: if (!window.Clipboard)
 				var pasteCatcher = $(document.createElement("div"));
-				pasteCatcher.attr("contenteditable","true").css({"position": "absolute"; width : "0", height : "0", "overflow" : "hidden", outline : 0});
+				pasteCatcher.attr("contenteditable","true").css({"position" : "absolute", "left" : "-999", width : "0", height : "0", "overflow" : "hidden", outline : 0});
 				$(document.body).prepend(pasteCatcher);
 			}
 		}
