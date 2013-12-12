@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="description" content="">
+		<meta charset="utf-8">
+		<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+		<script src="pasteimage.js"></script>
+		<script>
+		
+			function paste(source) {
+				$(document.body).append("<img src='" + source + "'>");
+			}
+			
+			$(function() {
+				$.pasteimage(paste);
+			});
+		</script>
+	</head>
+	<body>
+	</body>
+</html>
