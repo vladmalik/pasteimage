@@ -17,7 +17,7 @@ Usage
 ----------------------------------------
 
 	function callback(src) {
-		//src is the datauri which can be assigned as image src
+		//do something e.g., assign src to image
 	}
 
 	$(function() {
