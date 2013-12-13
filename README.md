@@ -19,13 +19,17 @@ Nick et al http://stackoverflow.com/questions/6333814/how-does-the-paste-image-f
 Usage
 ----------------------------------------
 
+Add within HEAD tag of page:
+
 	function callback(src) {
 		//do something e.g., assign src to image
 	}
-
+	
 	$(function() {
 		$.pasteimage(callback);
 	});
+	
+Capture screenshot and use CTRL+V to paste on the page.
 
 Option 1: Show the image on the page
 ----------------------------------------
