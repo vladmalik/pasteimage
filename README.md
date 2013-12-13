@@ -63,7 +63,7 @@ Option 2: Upload with PHP
   	$image = imagecreatefromstring(base64_decode($sourceString));
   	imagejpeg($image, $destination, 100);
 
-Outstanding
+Issues
 -------------------
 Doesn't work in FF if the focus is inside another text area (hypothesis: paste event happens before the plugin can refocus on the pastecatcher DIV). Need a way to delay paste event.
 
