@@ -16,6 +16,10 @@ Rafael http://stackoverflow.com/questions/11850970/javascript-blob-object-to-bas
 
 Nick et al http://stackoverflow.com/questions/6333814/how-does-the-paste-image-from-clipboard-functionality-work-in-gmail-and-google-c
 
+Requirements
+----------------------------------------
+jQuery
+
 Usage
 ----------------------------------------
 
