@@ -11,6 +11,7 @@ Credits
 ----------------------------------------
 
 Joel Besda http://joelb.me/blog/2011/code-snippet-accessing-clipboard-images-with-javascript/
+
 Rafael http://stackoverflow.com/questions/11850970/javascript-blob-object-to-base64
 
 Usage
