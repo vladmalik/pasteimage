@@ -1,5 +1,5 @@
-pasteimage
-==========
+pasteimage.js
+==============
 
 jQuery plugin adds ability to paste images from clipboard to Firefox and Chrome (and possibly Safari). It's not perfect, but I'm hoping by putting it all together into a plugin we can improve it.
 
