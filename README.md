@@ -3,7 +3,7 @@ pasteimage.js
 
 jQuery plugin adds ability to paste images from clipboard to Firefox and Chrome (and possibly Safari). It's not perfect, but I'm hoping by putting it all together into a plugin we can improve it.
 
-The plugin takes a callback function as a parameter. When a paste event is detected, the callback is triggered and the data uri of the image is passed as a parameter to the callback.
+The plugin takes a callback function as a parameter. When a paste event is detected, the callback is triggered and the datauri of the image is passed as a parameter to the callback.
 
 You can then upload the image to server or display it on the page.
 
@@ -12,6 +12,17 @@ Credits
 
 	Joel Besda http://joelb.me/blog/2011/code-snippet-accessing-clipboard-images-with-javascript/
 	Rafael http://stackoverflow.com/questions/11850970/javascript-blob-object-to-base64
+
+Usage
+----------------------------------------
+
+	function callback(src) {
+		//src is the datauri which can be assigned as image src
+	}
+
+	$(function() {
+		$.pasteimage(callback);
+	});
 
 Option 1: Show the image on the page
 ----------------------------------------
