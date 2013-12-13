@@ -2,6 +2,7 @@
 /* Credits: 
 	Joel Besda http://joelb.me/blog/2011/code-snippet-accessing-clipboard-images-with-javascript/
 	Rafael http://stackoverflow.com/questions/11850970/javascript-blob-object-to-base64
+	Nick et al http://stackoverflow.com/questions/6333814/how-does-the-paste-image-from-clipboard-functionality-work-in-gmail-and-google-c	
 */
 
 (function($) {
