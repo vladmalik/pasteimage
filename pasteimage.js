@@ -37,7 +37,7 @@
 						// Search clipboard items for an image
 						for (var i = 0; i < items.length; i++) { // removed: i < items.length, items[i].type.indexOf("image") !== -1
 							if (items[i].type.indexOf("image") !== -1) {
-								foundImage = true;								
+								//foundImage = true; Not sure why this was here								
 								// Convert image to blob using File API	               
 								var blob = items[i].getAsFile();
 								var reader = new FileReader();
@@ -46,7 +46,7 @@
 								};
 								/* Convert the blob from clipboard to base64 */		
 								reader.readAsDataURL(blob);
-								foundImage = false;
+								//foundImage = false; Not sure why this was here
 							}
 						}
 					} else { 
