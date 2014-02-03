@@ -35,7 +35,7 @@
 					var items = e.clipboardData.items;
 					if (items) {
 						// Search clipboard items for an image
-						for (var i = 0; i < items.length, items[i].type.indexOf("image") !== -1; i++) {
+						for (var i = 0; i < items.length; i++) {
 							if (items[i].type.indexOf("image") !== -1) {
 								foundImage = true;								
 								// Convert image to blob using File API	               
@@ -47,6 +47,7 @@
 								/* Convert the blob from clipboard to base64 */		
 								reader.readAsDataURL(blob);
 								foundImage = false;
+								break;
 							}
 						}
 					} else { 
