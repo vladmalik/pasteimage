@@ -53,7 +53,7 @@ Option 1: Show the image on the page
 Option 2: Upload with PHP
 ------------------------------
 
-  Add an input element to the HTML: <input name="img" type="text">
+  Add an input element to the HTML: <input name="sourceString" type="text">
   
   Define your callback function like this:
   
@@ -67,8 +67,9 @@ Option 2: Upload with PHP
 
   Then submit this field with a form (or use ajax).
   
-  On the backend, use PHP to upload the string data to a jpeg image:
-  
+  On the backend, use PHP to upload the string post data to a jpeg image:
+  	
+  	$sourceString = $_POST["sourceString"];
   	$image = imagecreatefromstring(base64_decode($sourceString));
   	imagejpeg($image, $destination, 100);
 
