@@ -38,10 +38,12 @@ Capture screenshot and use CTRL+V to paste on the page.
 Option 1: Show the image on the page
 ----------------------------------------
 
+ Insert an image element into the DOM: <img src="">
+
   Define your callback function like this:
   
     function showImage(src) {
-      $("#image").attr("src", src);
+      $("img").attr("src", src);
     }
   
   Then assign the callback to the plugin:
@@ -51,14 +53,21 @@ Option 1: Show the image on the page
 Option 2: Upload with PHP
 ------------------------------
 
-  First parse the uri to strip out "base64".
+  Add an input element to the HTML: <input name="img" type="text">
   
-    var sourceSplit = source.split("base64,");
-    var sourceString = sourceSplit[1];
+  Define your callback function like this:
   
-  Then assign sourceString to an input field and submit with form (or use ajax).
+    function insertImageURI(value) {
+    	// parse the uri to strip out "base64"
+    	var sourceSplit = value.split("base64,");
+    	var sourceString = sourceSplit[1];
+    	// Write base64-encoded string into input field
+      	$("input").val(sourceString);
+    }
+
+  Then submit this field with a form (or use ajax).
   
-  Use PHP to upload the string data to an image:
+  On the backend, use PHP to upload the string data to a jpeg image:
   
   	$image = imagecreatefromstring(base64_decode($sourceString));
   	imagejpeg($image, $destination, 100);
