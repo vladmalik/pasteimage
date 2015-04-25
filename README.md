@@ -38,7 +38,7 @@ Capture screenshot and use CTRL+V to paste on the page.
 Option 1: Show the image on the page
 ----------------------------------------
 
- Insert an image element into the DOM: <img src="">
+ Insert an img element into the DOM: &lt;img src=""&gt;
 
   Define your callback function like this:
   
